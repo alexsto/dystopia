@@ -1,0 +1,22 @@
+/* Copyright: (c) 2026 Future Pixels Studio LLC All Rights Reserved
+   Author: Alexander Stojanovic */
+:root { --neon: #5af2d9; --pink: #ff47b3; --ink: #05070f; --panel: #0b1020; --text: #dfe6f3; --muted: #8b95a8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at top, #1a0b2e 0%, var(--ink) 60%); color: var(--text);
+       font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace; min-height: 100vh; }
+header, main, footer { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+header { padding-top: 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header a.brand img { height: 56px; }
+nav a { color: var(--neon); text-decoration: none; margin-left: 18px; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+nav a:hover { text-decoration: underline; }
+h1 { color: var(--neon); font-size: 28px; margin: 40px 0 8px; letter-spacing: .04em; }
+h2 { color: var(--pink); font-size: 18px; margin: 32px 0 8px; letter-spacing: .06em; text-transform: uppercase; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+.panel { background: rgba(11, 16, 32, .85); border: 1px solid rgba(90, 242, 217, .3); border-radius: 14px; padding: 20px 24px; margin: 24px 0; }
+.tagline { font-size: 18px; text-align: center; }
+.hero { text-align: center; margin-top: 32px; }
+.hero img.logo { width: min(100%, 640px); }
+.shots img { width: 100%; border-radius: 12px; border: 1px solid rgba(90, 242, 217, .25); margin: 12px 0; }
+a { color: var(--neon); }
+footer { padding: 40px 24px 48px; color: var(--muted); font-size: 13px; text-align: center; }
